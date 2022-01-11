@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create your token</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="https://github.com/WalletConnect/walletconnect-monorepo/releases/download/1.6.2/web3-provider.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Create project</h1>
+    <p id="ca">CA</p>
+
+      <form action="/" method="post">
+        name
+        <input type="text" name="name" id="name"> 
+        tikker
+        <input type="text" name="tikker" id="tikker">
+        <br><br>
+        Buy fees
+        <br>
+        Rewards fee
+        <input type="text" name="buyRewardFee" id="buyRewardFee">
+        Liquidity fee
+        <input type="text" name="buyLiquidityFee" id="buyLiquidityFee">
+        Marketing fee
+        <input type="text" name="buyMarketingFee" id="buyMarketingFee">
+        Dev fee
+        <input type="text" name="buyDevFee" id="buyDevFee">
+
+        <br><br><br>
+        Sell fees
+        <br>
+        Rewards fee
+        <input type="text" name="sellRewardFee" id="sellRewardFee">
+        Liquidity fee
+        <input type="text" name="sellLiquidityFee" id="sellLiquidityFee">
+        Marketing fee
+        <input type="text" name="sellMarketingFee" id="sellMarketingFee">
+        Dev fee
+        <input type="text" name="sellDevFee" id="sellDevFee">
+        <br><br><br>
+        Dev wallet address
+        <input type="text" name="devWalletAddress" id="devWalletAddress">
+        Dividend wallet address
+        <input type="text" name="dividendWalletAddress" id="dividendWalletAddress">
+        marketing wallet address
+        <input type="text" name="marketingWalletAddress" id="marketingWalletAddress">     
+
+        <input type="submit" name="submit" id="submit">
+
+      </form>
+
+      <button id="login-button">Connect</button>
+  </body>
+  <script src="main.js"></script>
+</html>
+
